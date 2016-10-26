@@ -28,7 +28,7 @@ function startsWith(a, b) {
 
 function isCommand(s) {
   console.log("isCommand " + s);
-  var commands = ["board", "cards"];
+  var commands = ["boards", "currentBoard", "selectBoard", "cards"];
   for (var i=0; i<commands.length; i++) {
     if (startsWith(s, "/" + commands[i])) return true;
   }
@@ -50,8 +50,8 @@ function isCommand(s) {
 const ws = new WebSocket('ws://chat.wintonhackathon.com/rooms/test/ws');
 
 function processCommand(command) {
+  var words = command.split(" ");
   if (startsWith(command, "/board")) {
-    var words = command.split(" ");
     trello.getBoards("jacekburys", function(error, boards) {
       if (error) {
         console.log(error);
@@ -64,6 +64,45 @@ function processCommand(command) {
           "user" : "TrelloBot",
           "message" : res
         }));
+      }
+    });
+  } else if (startsWith(command, "/currentBoard")) {
+    if (!currentBoard) {
+      res = "No board selected";
+    } else {
+      res = currentBoard.name;
+    }
+    ws.send(JSON.stringify({
+      "user" : "TrelloBot",
+      "message" : res
+    }));
+  } else if (startsWith(command, "/selectBoard")) {
+    //currentBoard = words[1];
+    trello.getBoards("jacekburys", function(error, boards) {
+      if (error) {
+        console.log(error);
+      } else {
+        for (var i=0; i<boards.length; i++) {
+          if (boards[i].name == words[1]) {
+            currentBoard = boards[i];
+          }
+        }
+      }
+    });
+  } else if (startsWith(command, "/cards")) {
+    trello.getCardsOnBoard(currentBoard.id, function(error, cards) {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log(cards);
+        //var res = "";
+        //for (var i=0; i<boards.length; i++) {
+        //  res = res + boards[i].name + ", ";
+        //}
+        //ws.send(JSON.stringify({
+        //  "user" : "TrelloBot",
+        //  "message" : res
+        //}));
       }
     });
   }
