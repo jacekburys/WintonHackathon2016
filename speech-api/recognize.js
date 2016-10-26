@@ -36,8 +36,20 @@
 
 require('dotenv').load();
 const fs = require('fs');
+const S = require('string');
 const record = require('node-record-lpcm16');
 const speech = require('@google-cloud/speech')();
+const WebSocket = require('ws');
+
+const ws = new WebSocket('ws://chat.wintonhackathon.com/rooms/test7/ws');
+
+ws.on('open', function open() {
+    console.log("opened");
+});
+
+ws.on('message', function(data, flags) {
+    console.log(data);
+});
 
 // [START speech_sync_recognize]
 function syncRecognize(filename, callback) {
@@ -114,7 +126,21 @@ function streamingMicRecognize(filename) {
     const recognizeStream = speech.createRecognizeStream(options)
         .on('error', console.error)
         .on('data', (data) => {
-          process.stdout.write(data.results)
+            const recording = data.results;
+            const addCard = "/addCard Dev ";
+            const moveCard = "/moveCard development Finished";
+            let cmd = addCard + recording;
+            if (recording.indexOf("finish") > -1) {
+                let cmd = moveCard;
+            }
+            const JSONMessage = {
+                "user": "Voice from above",
+                "message": cmd
+            };
+            if (recording) {
+                ws.send(JSON.stringify(JSONMessage));
+            }
+            // process.stdout.write(data.results);
         });
 
     // Start recording and send the microphone input to the Speech API
