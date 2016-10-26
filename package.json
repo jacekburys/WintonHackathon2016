@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/jacekburys/WintonHackathon2016/issues"
   },
-  "homepage": "https://github.com/jacekburys/WintonHackathon2016#readme"
+  "homepage": "https://github.com/jacekburys/WintonHackathon2016#readme",
+  "dependencies": {
+    "express": "~4.14.0",
+    "trello": "^0.5.1",
+    "websocket": "~1.0.23",
+    "websocket-client": "~1.0.0",
+    "ws": "~1.1.1"
+  }
 }
