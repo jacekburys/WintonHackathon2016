@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "speech-recognition-147612",
+  "private_key_id": "eb803ebec48bb06b9f6d879939509ba1308c95a3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDRsdQXYlaRXoAQ\nt1+wFKARtXYAXdy4ZhLUEZijF/d3CGvoAtgJq0RPD0FIZE53bauS2hW3viSRkTFE\nkWl+thj0fGoewrvsfMn7YvMicoM63fa91lrg0cTZxqlLraQaGOZi3Jk+90lmdSiW\nRkBSGiRV5RS20FO8g4wmPM0vfm23AeuPLZuefX/xLmp3sauUwAXBTiIKERgCRwsm\n4UHRFsogBBPekyHsEenDKNqpnJG1gVVQIl9OqIeuIirGgyn39C4/GpVVTZEQyVBw\nDTJNwo3LdgonhYP1lqaKKm+m+lxaKgmOUYziFaN6cScECNcA8FekFcCHYXIVdsxK\nR/QcAx0DAgMBAAECggEBAM45GOA2cfRc/41xCcXdQt6nmvkZVixzFilBdN9Qfqqt\nuZFe2qAHsxIdapKLMy/4xzeRCrK9aLFQHSfV6e4Xn8sxYBwIX1BgGTQFSB+khrKq\nADMKUC2xnuqdmXk3t5+CxXCMipmGEMWWiuffBvq3guyGciyoDPHkXTxtp00CBVxn\n2cIWMIpWd48gkJkAd20ZXTqt+RM7V9KDH4IkVt7g5HZ8UbTSuZb84G6fatRG62o8\n96YRTzquYhjSTFmtq6i+mUbMcT5c9lcxzwR0t8k9uEJqMP8GcMvF7R1axTGXNVlN\nBoMPeYCjUXNJDSU0pAxJJoxsA0dYmsP0ThNSgDY5K+ECgYEA+47c/wJJMmU73H8l\n2soKSDbpKefrt3kagGcV1FhOIdtabVHKXjidUPqPpYta1JJ0kBlrCUlwNYL6ztKX\nb/WqAznF7K4Mg0bZ5ts1FPUC7SAr6fn4x81D11noxB+i/yLlxlhWFpFavYF6qs0R\n1pF4ShJnaMZ3q6UKPcrSC9FH0LUCgYEA1WW6FJOpHkpAPzmJ9HxI3jSqw+vbEtph\ndMmI0m0LLp4r4c6O2AfTYrw9BVAjNCXUJ5hDbe56aT2lQ+ooXW/kAGNpUBFYEo31\nTEqNznS8on7jquvS/dQv0iWAPe7phSfgueySod0EGdoJBklbFv4OoFGAA+Jrxs1n\nMcMn+shNodcCgYAjPY9OFibk7XOmXxWRge5Q0Yh2e2v1Jv0EceyH89r2OUGAwQ2F\nh47aUk+fVFdkIiQ8L6NkCKq0hGXYZX4bjCHGE+jbUEKmfV13Tswv5GcFixU70O3+\nJ45Sc+D84KW38k6YK7XbsX8xvxrNJK9UDMr6LXvZHLyVCijWITyttSLHZQKBgQDU\niaoIvnytD3Tnw64UFAkbT0dZNTqPj3OLNwKP2k1N0/mOwATjQwAVkbgQ55z4Xkjs\nWqml/uRqlxxYBQrI7R0gCeMk/PFEIaFTp9mO7BPIoCqu3IvbhY9PdUxB4wcwOOSJ\nKQduMUvZV6CvYzZXMxhsMmAW/lcrvP5vwJi8HO29JwKBgAZD3i9/sn296kgh2BF2\nWs7MEVPfEdl9q42uHpvTQDCZMefO7Hq29Q1r10wyFZFt7mGrGVg3vGnLX6NlaPu8\njU6fcjO1FggthxKbo71Qjz4ffcD5+bIiVmtfqoTL8g7/l954SQTNkVJl6HkW/dX3\nYils8KdJHXmowWW0pTOObl4e\n-----END PRIVATE KEY-----\n",
+  "client_email": "winton-hackathon@speech-recognition-147612.iam.gserviceaccount.com",
+  "client_id": "110255008028830094724",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/winton-hackathon%40speech-recognition-147612.iam.gserviceaccount.com"
+}
